@@ -55,7 +55,7 @@ class BlockWorld():
 			return
 
 		if where == 0: 			 # to the ground, create a new stack
-			stack_to = np.empty(0, dtype=np.int)
+			stack_to = np.empty(0, dtype=int)
 			self.state.append(stack_to)
 			stack_to_id = len(self.state) - 1
 		else: 					 
@@ -129,7 +129,7 @@ class BlockWorld():
 		return blocks_
 
 if __name__ == '__main__':
-	blocks = BlockWorld(3)
+	blocks = BlockWorld(10)
 
 	while True:
 		print(f"state = {blocks}")
@@ -137,6 +137,7 @@ if __name__ == '__main__':
 		print("<from> <to>: ", end="")
 
 		n_from, n_to = [int(x) for x in input().split()]
+		print(n_from, n_to)
 		blocks.apply((n_from, n_to))
 
 

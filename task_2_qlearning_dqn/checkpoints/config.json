@@ -1,0 +1,15 @@
+{
+  "seed": 42,
+  "batch_size": 128,
+  "hidden_features": 256,
+  "target_net_update": 0.005,
+  "lr": 0.0003,
+  "replay_capacity": 10000,
+  "replay_terminal_ratio": 0.1,
+  "num_episodes": 1000,
+  "save_interval": 100,
+  "gamma": 0.99,
+  "epsilon_start": 1.0,
+  "epsilon_end": 0.05,
+  "epsilon_decay": 5000
+}

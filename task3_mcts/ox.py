@@ -3,6 +3,9 @@ import numpy as np, itertools, copy
 MARKS_AS_CHAR = {0: '.', 1: 'x', 2: 'o'}
 PLAYER_TO_MARK = [1, 2]
 MARK_TO_PLAYER = [None, 0, 1]
+class Node():
+	def __init__(self,parent=None, child=None, next_moves, visit, score):
+		
 
 class Board():
 	def __init__(self, size=10, row_to_win=5):

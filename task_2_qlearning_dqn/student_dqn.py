@@ -12,8 +12,8 @@ from typing import Iterable, Tuple
 from blockworld import BlockWorldEnv
 from dqn_networks import DQNNetwork
 from replay_buffer import ReplayBuffer
- 
- 
+
+
 parser = ArgumentParser()
 parser.add_argument("--num_blocks", type=int, default=5)
 parser.add_argument("--model_restore_path", type=str, default="checkpoints")
